@@ -1,6 +1,7 @@
 import { 
   Header,
   Sidebar,
+  Home 
 } from './components'
 
 export const App = () => {
@@ -8,6 +9,7 @@ export const App = () => {
     <>
       <Sidebar />
       <main className='app'>
+        <Home />
         <Header />
       </main>
     </>
