@@ -1,0 +1,19 @@
+@media screen and (min-width: 768px) {
+    .app {
+        margin-left: 23rem;
+    }
+
+    .home__button {
+        width: initial;
+    }
+
+    .nav__menu {
+        width: var(--nav-width);
+        left: 0;
+    }
+
+    .nav__close, .nav__toggle {
+        display: none;
+    }
+}
+
