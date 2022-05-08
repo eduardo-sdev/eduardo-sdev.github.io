@@ -3,6 +3,7 @@ import {
   Sidebar,
   Home,
   Projects,
+  Skills,
   Footer
 } from './components'
 
@@ -14,8 +15,10 @@ export const App = () => {
       <main className='app'>
         <Home />
         <Projects />
+        <Skills />
         <Footer />
       </main>
     </>
   )
 }
+
