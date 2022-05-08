@@ -43,7 +43,7 @@ export function Home() {
               </a>
             </div>
 
-            <a href="#" className="button home__button">Curricolo</a>
+            <a href="#" className="button home__button">Currículo</a>
           </div>
 
         </div>

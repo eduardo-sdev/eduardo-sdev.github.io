@@ -6,7 +6,7 @@
     z-index: 1;
     justify-content: space-around;
     padding: 1rem 2rem 0 2rem;
-    background-color: var(--first-color-lighten);
+    background-color: var(--color-bg);
     box-shadow: 0 2px 4px rgba(0,0,0,.1);
 
     .nav {
@@ -15,12 +15,6 @@
         justify-content: space-between;
         align-items: center;
 
-        .nav__toggle {
-            color: var(--first-color-dark);
-            font-size: 1.3rem;
-            cursor: pointer;
-        }
-
         .nav__logo {
             display: flex;
             font-size: var(--h1-font-size);
@@ -28,6 +22,13 @@
             justify-content: center;
             text-align: center;
             margin-bottom: 1rem;
+        }
+
+        .toggle {
+            color: var(--text-color);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+            cursor: pointer;
         }
     }
 }

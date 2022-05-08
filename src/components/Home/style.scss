@@ -1,7 +1,7 @@
 .home__container {
     height: calc(100vh - var(--header-height));
     align-items: center;
-    margin-top: 10rem;
+    padding-top: 10rem;
 
     .home__data {
         display: flex;
@@ -32,7 +32,7 @@
 
         .home__profession {
             font-size: var(--small-font-size);
-            color: var(--first-color-dark);
+            color: var(--text-color);
             margin-bottom: var(--mb-5);
         }
 
