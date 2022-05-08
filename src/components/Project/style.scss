@@ -14,7 +14,6 @@
                 display: flex;
                 width: 100px;
                 height: 100px;
-                background-image: cover;
 
                 margin-right: var(--mb-5);
                 img {
@@ -30,10 +29,19 @@
                 font-size: var(--h3-font-size);
             }
         }
+    }
 
-        .project__deploy a{
-            text-decoration: underline;
+    .project__date{
+        font-size: var(--h2-font-size);
+    }
+
+    .project__list{
+        margin-top: 2rem;
+        font-size: var(--h2-font-size);
+
+        .project__list-item span{
+            font-weight: var(--font-bold);
+            margin-left: .5rem;
         }
-
     }
 }
