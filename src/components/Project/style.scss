@@ -1,11 +1,14 @@
 .project__data {
-
     .project__header {
         display: flex;
         justify-content: space-between;
 
-        margin-right: 4rem;
-        margin-bottom: 1rem;
+        margin: 0 4rem 1rem 0;
+
+        border-top: 1px solid var(--text-color);
+
+        padding-top: 1.5rem;
+
 
         .box{
             display: flex;
@@ -43,5 +46,9 @@
             font-weight: var(--font-bold);
             margin-left: .5rem;
         }
+    }
+
+    &:nth-child( n + 2 ) {
+        margin-top: 7rem;
     }
 }

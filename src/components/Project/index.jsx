@@ -8,11 +8,13 @@ import {
     Stack,
 } from "phosphor-react";
 
+import uniqid from 'uniqid'
+
 import "./style.scss";
 
-export const Project = ({ project, id }) => {
+export const Project = ({ project }) => {
     return (
-        <div key={id} className="project__data">
+        <div key={uniqid()} className="project__data">
             <div className="project__header">
                 <div className="box">
                     <div className="project__image">

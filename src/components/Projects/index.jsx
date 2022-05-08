@@ -12,7 +12,7 @@ export const Projects = () => {
           {
             db.map(proj => {
               return (
-                <Project id={uniqid()} project={proj} />
+                <Project key={uniqid()} project={proj} />
               )
             })
           }
