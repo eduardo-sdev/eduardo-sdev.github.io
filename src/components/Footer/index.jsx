@@ -32,7 +32,13 @@ export function Footer() {
                         <LinkedinLogo size={32} />
                     </a>
                 </div>
-                <p className='Footer__copy'>Todos os direitos resevado por @EduardoSilva - 2022</p>
+                <p className='Footer__copy'>Todos os direitos resevado por 
+                    <a
+                        href="https://github.com/eduardo-sdev" 
+                        target="_blank" rel="noopener noreferrer" 
+                        className="footer__link"
+                    > @EduardoSilva </a>
+                - 2022</p>
             </div>
         </footer>
     )
