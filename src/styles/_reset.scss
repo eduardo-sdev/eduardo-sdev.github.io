@@ -11,9 +11,14 @@ body {
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
-    background-color: #var(--first-color-lighten);
+    background: var(--first-color-bg);
     color: var(--text-color);
     line-height: 1.6;
+
+    .dark {
+        background: var(--color-bg);
+        color: var(--text-color);
+    }
 }
 
 h1,h2,h3,p{
@@ -32,7 +37,7 @@ ul{
 
 a{
     text-decoration: none;
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 img {

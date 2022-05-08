@@ -1,0 +1,62 @@
+:root {
+    --header-height: 3rem;
+    --nav-width: 324px;
+
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+
+    --md-1: .5rem;
+
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+
+    --first-color: #cc4b2c;
+
+    --color-bg: #fff;
+    --color-bg-alt: #cc4b2c;
+
+    --first-color-dark: #662616;
+    --first-color-darken: #290f09;
+
+    --text-color: #54423d;
+    --text-color-hover: #54423d;
+
+    --first-color-light: #eae7e6;
+    --first-color-lighten: #fffafa;
+
+    --body-font: "Open sans", sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+
+    --md-1: .5rem;
+    --md-2: 1rem;
+    --md-3: 1.5rem;
+    --md-4: 2rem;
+    --md-5: 2.5rem;
+
+    --z-fixed: 100;
+}
+
+.dark {
+    --first-color: #2a2f4c;
+    --color-bg: #23283e;
+    --color-bg-alt: #23283e;
+
+    --first-color-dark: #662616;
+    --first-color-darken: #290f09;
+
+    --text-color: #eae7e6;
+    --text-color-hover: #54423d;
+
+    --first-color-light: #eae7e6;
+    --first-color-lighten: #fffafa;
+}
+

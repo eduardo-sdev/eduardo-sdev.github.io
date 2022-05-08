@@ -1,3 +1,5 @@
+import { useContext } from 'react'
+
 import { 
   Header,
   Sidebar,
@@ -7,9 +9,13 @@ import {
   Footer
 } from './components'
 
+import { ThemeContext } from './context/themeContext'
+
 export const App = () => {
+  const [{themeName}] = useContext(ThemeContext)
+
   return (
-    <>
+    <div className={themeName}>
       <Header />
       <Sidebar />
       <main className='app'>
@@ -18,7 +24,7 @@ export const App = () => {
         <Skills />
         <Footer />
       </main>
-    </>
+    </div>
   )
 }
 
