@@ -42,9 +42,26 @@
         margin-top: 2rem;
         font-size: var(--h2-font-size);
 
-        .project__list-item span{
-            font-weight: var(--font-bold);
-            margin-left: .5rem;
+        .project__list-item {
+
+            span{
+                font-weight: var(--font-bold); margin-left: .5rem;
+
+            }
+
+            .link{
+                text-decoration: underline;
+            }
+        }
+
+        .stack__list {
+            display: flex;
+            display: inline-flex;
+
+            .stack__list-item::after {
+                content: ' ';
+                padding-right: .5rem;
+            }
         }
     }
 

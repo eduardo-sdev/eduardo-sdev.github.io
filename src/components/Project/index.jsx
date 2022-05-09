@@ -55,17 +55,21 @@ export const Project = ({ project }) => {
                 <li className="project__list-item">
                     <Stack />
                     <span>Stacks: </span>
-                    {project.stacks}
+                    <ul className="stack__list">
+                        {project.stacks.map(stak => (
+                            <li className="stack__list-item" key={uniqid()}>{stak} </li>
+                        ))}
+                    </ul>
                 </li>
                 <li className="project__list-item">
                     <Rocket />
-                    <span>Deploy: </span>
-                    <a href={project.deploy}>Deploy</a>
+                    <span >Deploy: </span>
+                    <a className="link" href={project.deploy}>Deploy</a>
                 </li>
                 <li className="project__list-item">
                     <Terminal />
                     <span>Código: </span>
-                    <a href={project.repo}>Ver Código</a>
+                    <a className="link" href={project.repo}>Ver Código</a>
                 </li>
             </ul>
         </div>
