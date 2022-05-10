@@ -1,16 +1,15 @@
 .learn__data {
+    border-bottom: 1px solid var(--text-color);
+    padding-bottom: 5rem;
+
     .learn__header {
         display: flex;
         justify-content: space-between;
 
         margin: 0 4rem 1rem 0;
 
-        &:nth-child( n + 2 ) {
-            border-top: 1px solid var(--text-color);
-        }
 
         padding-top: 1.5rem;
-
 
         .box{
             display: flex;
@@ -44,9 +43,19 @@
         margin-top: 2rem;
         font-size: var(--h2-font-size);
 
-        .learn__list-item span{
-            font-weight: var(--font-bold);
-            margin-left: .5rem;
+        .learn__list-item {
+            .learn__stacks {
+                display: inline-flex;
+                .learn__stacks-item::after {
+                    content: ',';
+                    margin-right: 10px;
+                }
+            }
+
+            span{
+                font-weight: var(--font-bold);
+                margin-left: .5rem;
+            }
         }
     }
 

@@ -1,9 +1,7 @@
 import {
     CalendarCheck,
     HourglassHigh,
-    Terminal,
     CheckSquare,
-    Rocket,
     FlagBanner,
     Stack,
 } from "phosphor-react";
@@ -55,7 +53,13 @@ export const LearnContainer = ({learn}) => {
                 <li className="learn__list-item">
                     <Stack />
                     <span>Stacks: </span>
-                    {learn.stacks}
+                    <ul className="learn__stacks">
+                        {learn.stacks.map(item => (
+                            <li key={uniqid()} className="learn__stacks-item">
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
                 </li>
                 <li className="learn__list-item link">
                     <a href={learn.certificate}>Ver certificado</a>

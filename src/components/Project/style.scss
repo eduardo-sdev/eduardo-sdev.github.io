@@ -32,11 +32,12 @@
                 font-size: var(--h3-font-size);
             }
         }
+
+        .project__date{
+            font-size: var(--h2-font-size);
+        }
     }
 
-    .project__date{
-        font-size: var(--h2-font-size);
-    }
 
     .project__list{
         margin-top: 2rem;
@@ -46,21 +47,15 @@
 
             span{
                 font-weight: var(--font-bold); margin-left: .5rem;
-
-            }
-
-            .link{
-                text-decoration: underline;
             }
         }
 
         .stack__list {
-            display: flex;
             display: inline-flex;
 
             .stack__list-item::after {
-                content: ' ';
-                padding-right: .5rem;
+                content: ',';
+                margin-right: 10px;
             }
         }
     }

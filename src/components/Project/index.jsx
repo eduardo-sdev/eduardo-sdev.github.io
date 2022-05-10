@@ -57,7 +57,7 @@ export const Project = ({ project }) => {
                     <span>Stacks: </span>
                     <ul className="stack__list">
                         {project.stacks.map(stak => (
-                            <li className="stack__list-item" key={uniqid()}>{stak} </li>
+                            <li className="stack__list-item" key={uniqid()}>{stak}</li>
                         ))}
                     </ul>
                 </li>
