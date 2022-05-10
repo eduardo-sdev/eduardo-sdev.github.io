@@ -34,7 +34,7 @@ export function Footer() {
                 </div>
                 <p className='Footer__copy'>Todos os direitos resevado por 
                     <a
-                        href="https://github.com/eduardo-sdev" 
+                        href="https://github.com/eduardo-sdev/eduardo-sdev.github.io" 
                         target="_blank" rel="noopener noreferrer" 
                         className="footer__link"
                     > @EduardoSilva </a>
@@ -43,3 +43,4 @@ export function Footer() {
         </footer>
     )
 }
+

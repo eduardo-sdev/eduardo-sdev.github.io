@@ -24,10 +24,11 @@
             margin-bottom: 1rem;
         }
 
-        .toggle {
+        .nav__toggle--theme {
             color: var(--text-color);
             font-size: 1.5rem;
             margin-bottom: 10px;
+            padding-right: 1.5rem;
             cursor: pointer;
         }
     }

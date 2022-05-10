@@ -19,7 +19,7 @@ export const Header = () => {
           <div className="nav__logo">
             <a href="#" >EduardoSilva</a>
           </div>
-          <div onClick={toggleTheme} className="toggle">
+          <div onClick={toggleTheme} className="nav__toggle--theme">
               {themeName === 'dark' ? <FaSun /> : <FaMoon />}
             </div>
         </nav>
