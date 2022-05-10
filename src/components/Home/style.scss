@@ -10,20 +10,6 @@
         height: max-content;
         text-align: center;
 
-        .home__img {
-            padding: .4rem;
-            width: 160px;
-            height: 160px;
-            border-radius: 50%;
-            background-color: var(--first-color);
-            overflow: none;
-            margin-bottom: var(--md-2);
-
-            img {
-                border-radius: 50%;
-            }
-        }
-
         .home__title {
             font-size: var(--h1-font-size);
             color: var(j--first-color-dark);

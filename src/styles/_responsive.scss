@@ -7,12 +7,12 @@
         width: initial;
     }
 
-    .nav__menu {
+    .sidebar__menu {
         width: var(--nav-width);
         left: 0;
     }
 
-    .nav__close, .nav__toggle {
+    .sidebar__toggle {
         display: none;
     }
 
@@ -26,4 +26,3 @@
         border-radius: .5rem;
     }
 }
-

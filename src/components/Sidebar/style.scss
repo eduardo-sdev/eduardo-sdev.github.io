@@ -1,4 +1,4 @@
-.nav__menu {
+.sidebar__menu {
     position: fixed;
     top: 0;
     left: -100%;
@@ -10,13 +10,29 @@
     background-color: var(--first-color);
     transition: .5s;
 
-    .nav__list {
+    .sidebar__list {
         margin: 0 auto;
-        .nav__item {
+        text-align: center;
+
+        .sidebar__item {
             margin-bottom: var(--mb-4);
+
+            .sidebar__profile {
+                padding: .4rem;
+                width: 160px;
+                height: 160px;
+                border-radius: 50%;
+                background-color: var(--first-color-lighten);
+                overflow: none;
+                margin-bottom: var(--md-2);
+
+                img {
+                    border-radius: 50%;
+                }
+            }
         }
 
-        .nav__link {
+        .sidebar__link {
             font-size: 1.5rem;
             text-decoration: uppercase;
             color: var(--first-color-lighten);
@@ -30,7 +46,7 @@
     }
 }
 
-.nav__toggle{
+.sidebar__toggle{
     position: fixed;
     top: 1rem;
     right: 1rem;

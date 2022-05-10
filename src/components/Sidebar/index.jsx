@@ -11,20 +11,25 @@ export const Sidebar = () => {
 
   return (
     <>
-        <div style={{left: showSidebar ? '0': null}} id="nav-menu" className="nav__menu">
+        <div style={{left: showSidebar ? '0': null}} id="sidebar-menu" className="sidebar__menu">
 
-          <ul className="nav__list">
-            <li className="nav__item"><a href="#home" className="nav__link active">Home</a></li>
-            <li className="nav__item"><a href="#about" className="nav__link">Sobre</a></li>
-            <li className="nav__item"><a href="#project" className="nav__link">Projetos</a></li>
-            <li className="nav__item"><a href="#skills" className="nav__link">Skills</a></li>
-            <li className="nav__item"><a href="#learn" className="nav__link">Estudos</a></li>
-            <li className="nav__item"><a href="#contact" className="nav__link"></a></li>
+          <ul className="sidebar__list">
+            <li className="sidebar__item">
+              <a href="#home" className="sidebar__link active">
+                <div className="sidebar__profile">
+                  <img src="https://avatars.githubusercontent.com/u/79378029?v=4" alt="EduardoSilva"/>
+                </div>
+              </a></li>
+            <li className="sidebar__item"><a href="#about" className="sidebar__link">Sobre</a></li>
+            <li className="sidebar__item"><a href="#project" className="sidebar__link">Projetos</a></li>
+            <li className="sidebar__item"><a href="#skills" className="sidebar__link">Skills</a></li>
+            <li className="sidebar__item"><a href="#learn" className="sidebar__link">Estudos</a></li>
+            <li className="sidebar__item"><a href="#contact" className="sidebar__link"></a></li>
           </ul>
         </div>
         <div 
           onClick={() => toggleSidebar()}
-          className="nav__toggle" id="nav-toggle"
+          className="sidebar__toggle" id="nav-toggle"
         >
           <List size={32} />
         </div>

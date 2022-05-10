@@ -12,10 +12,6 @@ export function Home() {
       <section className="home">
         <div className="home__container gb-grid">
           <div className="home__data">
-            <div className="home__img">
-              <img src="https://avatars.githubusercontent.com/u/79378029?v=4" alt="EduardoSilva"/>
-            </div>
-
             <h1 className="home__title">EduardoSilva</h1>
             <span className="home__profession">Frontend Developer</span>
 
