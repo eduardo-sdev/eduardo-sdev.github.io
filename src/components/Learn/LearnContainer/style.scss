@@ -50,6 +50,12 @@
                     content: ',';
                     margin-right: 10px;
                 }
+
+            }
+
+            .learn__links-item::before {
+                content: '';
+                margin: 0 10px;
             }
 
             span{

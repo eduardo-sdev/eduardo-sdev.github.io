@@ -1,3 +1,7 @@
+
+
+import { BsLink45Deg } from 'react-icons/bs';
+
 import {
     CalendarCheck,
     HourglassHigh,
@@ -61,10 +65,32 @@ export const LearnContainer = ({learn}) => {
                         ))}
                     </ul>
                 </li>
-                <li className="learn__list-item link">
-                    <a href={learn.certificate}>Ver certificado</a>
-                </li>
+                {
+                    learn.links.initpage && learn.links.initpage !== null && (
+
+                        <li className="learn__list-item">
+                            <BsLink45Deg/> Links: 
+                            {
+                                learn.links.initpage !== null && (
+                                    <a 
+                                        href={learn.links.initpage} className="link"
+                                        target="_blank" rel="noopener noreferrer"
+                                    >Página Inicial</a>
+                                )
+                            }
+                            {
+                                learn.links.certificate !== null && (
+                                    <a 
+                                        href={learn.links.certificate} className="link learn__links-item"
+                                        target="_blank" rel="noopener noreferrer"
+                                    >Certificado</a>
+                                )
+                            }
+                        </li>
+                    )
+                }
             </ul>
         </div>
     );
 }
+
