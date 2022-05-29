@@ -54,10 +54,9 @@
             }
 
             .learn__links-item::before {
-                content: '';
-                margin: 0 10px;
+                    content: '';
+                    margin-right: 8px;
             }
-
             span{
                 font-weight: var(--font-bold);
                 margin-left: .5rem;

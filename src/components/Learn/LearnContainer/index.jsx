@@ -20,7 +20,7 @@ export const LearnContainer = ({learn}) => {
             <div className="learn__header">
                 <div className="box">
                     <div className="learn__image">
-                        <img src={learn.imgurl} alt="" />
+                        <img src={learn.imageurl.url} alt={learn.title} />
                     </div>
                     <div>
                         <div className="learn__title">{learn.title}</div>
@@ -32,7 +32,7 @@ export const LearnContainer = ({learn}) => {
                 </div>
 
                 <div className="learn__date">
-                    <CalendarCheck />: {learn.date}
+                    <CalendarCheck />: {learn.data}
                 </div>
             </div>
 
@@ -65,29 +65,28 @@ export const LearnContainer = ({learn}) => {
                         ))}
                     </ul>
                 </li>
-                {
-                    learn.links.initpage && learn.links.initpage !== null && (
-
+                { learn.initpage || learn.certificate ? (
                         <li className="learn__list-item">
-                            <BsLink45Deg/> Links: 
+                            <BsLink45Deg/>
+                                <span>Links:</span>
                             {
-                                learn.links.initpage !== null && (
-                                    <a 
-                                        href={learn.links.initpage} className="link"
+                                learn.initpage && (
+                                    <a
+                                        href={learn.initpage} className="link learn__links-item"
                                         target="_blank" rel="noopener noreferrer"
                                     >Página Inicial</a>
                                 )
                             }
                             {
-                                learn.links.certificate !== null && (
-                                    <a 
-                                        href={learn.links.certificate} className="link learn__links-item"
+                                learn.certificate && (
+                                    <a
+                                        href={learn.certificate} className="link learn__links-item"
                                         target="_blank" rel="noopener noreferrer"
                                     >Certificado</a>
                                 )
                             }
                         </li>
-                    )
+                ) : ('')
                 }
             </ul>
         </div>
