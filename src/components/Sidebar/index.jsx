@@ -20,14 +20,14 @@ export const Sidebar = () => {
                   <img src="https://avatars.githubusercontent.com/u/79378029?v=4" alt="EduardoSilva"/>
                 </div>
               </a></li>
-            <li className="sidebar__item"><a href="#about" className="sidebar__link">Sobre</a></li>
-            <li className="sidebar__item"><a href="#project" className="sidebar__link">Projetos</a></li>
+            <li className="sidebar__item"><a href="#home" className="sidebar__link">Sobre</a></li>
+            <li className="sidebar__item"><a href="#projects" className="sidebar__link">Projetos</a></li>
             <li className="sidebar__item"><a href="#skills" className="sidebar__link">Skills</a></li>
             <li className="sidebar__item"><a href="#learn" className="sidebar__link">Estudos</a></li>
             <li className="sidebar__item"><a href="#contact" className="sidebar__link"></a></li>
           </ul>
         </div>
-        <div 
+        <div
           onClick={() => toggleSidebar()}
           className="sidebar__toggle" id="nav-toggle"
         >

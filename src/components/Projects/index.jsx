@@ -43,7 +43,10 @@ export const Projects = () => {
 
   return (
     <>
-      <section className="projects">
+      <section id="projects" className="projects">
+        <h2 className="section__title">
+          Projetos
+        </h2>
         <div className="projects__container">
           {
             projects ? (
