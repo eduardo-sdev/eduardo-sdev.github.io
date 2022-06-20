@@ -14,6 +14,8 @@ export function Home() {
           <div className="home__data">
             <h1 className="home__title">EduardoSilva</h1>
             <span className="home__profession">Frontend Developer</span>
+            <p>Desenvolvedor front-end entusiasmado, com experiências em construção de aplicações web usando HTML, CSS, JS e outras tecnologias,  para soluções de problemas  e auxiliando na conclusão oportuna dos projetos.
+</p>
 
             <div className="home__social">
               <a
@@ -39,7 +41,10 @@ export function Home() {
               </a>
             </div>
 
-            <a href="#" className="button home__button">Currículo</a>
+            <a 
+              target="_blank" rel="noopener noreferrer"
+              href="https://docs.google.com/document/d/1s-zw3GkYUueCKR7OzMN2GCYOok13eJR6eZnpgqIK2P8/edit#heading=h.rpvue6jo234o" 
+              className="button home__button">Currículo</a>
           </div>
 
         </div>
