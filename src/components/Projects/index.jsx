@@ -16,7 +16,7 @@ export const Projects = () => {
             'Accept': 'application/json',
           },
           body: JSON.stringify({ "query": `query {
-            allProjects {
+            allProjects(filter: {public: {eq: true}}) {
                 title
                 id
                 data

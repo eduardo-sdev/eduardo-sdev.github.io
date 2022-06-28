@@ -1,3 +1,5 @@
+import { BsImage } from 'react-icons/bs';
+
 import {
     CalendarCheck,
     HourglassHigh,
@@ -18,7 +20,10 @@ export const Project = ({ project }) => {
              <div className="project__header">
                  <div className="box">
                      <div className="project__image">
-                        <img src={project.imageurl.url} alt="" />
+                        {project.imageurl ? (
+                            <img src={project.imageurl.url} alt={project.title} />
+                            ) : (<BsImage size={100} />)
+                        }
                      </div>
                      <div>
                          <div className="project__title">{project.title}</div>
@@ -41,16 +46,20 @@ export const Project = ({ project }) => {
                      <span>Status: </span>
                      {project.statusdev}
                  </li>
-                 <li className="project__list-item">
-                     <CheckSquare />
-                     <span>task: </span>
-                     {project.task}
-                 </li>
-                 <li className="project__list-item">
-                     <FlagBanner />
-                     <span>Skills: </span>
-                     {project.skill}
-                 </li>
+                 {project.task && (
+                     <li className="project__list-item">
+                         <CheckSquare />
+                         <span>task: </span>
+                         {project.task}
+                     </li>
+                 )}
+                 {project.skill && (
+                     <li className="project__list-item">
+                         <FlagBanner />
+                         <span>Skills: </span>
+                         {project.skill}
+                     </li>
+                 )}
                  <li className="project__list-item">
                      <Stack />
                      <span>Stacks: </span>
