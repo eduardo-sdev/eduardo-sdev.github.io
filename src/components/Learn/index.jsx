@@ -17,7 +17,7 @@ export const Learn = () => {
             'Accept': 'application/json',
           },
           body: JSON.stringify({ "query": `query {
-            allLearns {
+            allLearns(filter: {public: {eq: true}}) {
                 title
                 id
                 data
@@ -57,7 +57,7 @@ export const Learn = () => {
                  <LearnContainer key={uniqid()} learn={item} />
                )
              })
-            ) : (<h3>Carregando Projetos...</h3>)
+            ) : (<h3>Carregando Estudos...</h3>)
           }
       </div>
     </section>

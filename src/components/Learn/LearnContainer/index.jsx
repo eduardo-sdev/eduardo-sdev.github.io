@@ -1,6 +1,4 @@
-
-
-import { BsLink45Deg } from 'react-icons/bs';
+import { BsLink45Deg, BsImage } from 'react-icons/bs';
 
 import {
     CalendarCheck,
@@ -20,7 +18,10 @@ export const LearnContainer = ({learn}) => {
             <div className="learn__header">
                 <div className="box">
                     <div className="learn__image">
-                        <img src={learn.imageurl.url} alt={learn.title} />
+                        {learn.imageurl ? (
+                            <img src={learn.imageurl.url} alt={learn.title} />
+                            ) : (<BsImage size={100} />)
+                        }
                     </div>
                     <div>
                         <div className="learn__title">{learn.title}</div>
@@ -40,20 +41,25 @@ export const LearnContainer = ({learn}) => {
                 <li className="learn__list-item">
                     <HourglassHigh />
                     <span>Status: </span>
-                    {learn.status}
+                    {learn.statusdev}
                 </li>
 
-                <li className="learn__list-item">
-                    <CheckSquare />
-                    <span>Task: </span>
-                    {learn.task}
-                </li>
+                {learn.task && (
+                    <li className="learn__list-item">
+                        <CheckSquare />
+                        <span>Task: </span>
+                        {learn.task}
+                    </li>
+                    )
+                }
 
-                <li className="learn__list-item">
-                    <FlagBanner />
-                    <span>Skills: </span>
-                    {learn.skills}
-                </li>
+                {learn.skill && (
+                    <li className="learn__list-item">
+                        <FlagBanner />
+                        <span>Skills: </span>
+                        {learn.skill}
+                    </li>
+                )}
                 <li className="learn__list-item">
                     <Stack />
                     <span>Stacks: </span>
