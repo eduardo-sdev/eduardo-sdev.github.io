@@ -91,6 +91,14 @@ export const LearnContainer = ({learn}) => {
                                     >Certificado</a>
                                 )
                             }
+                            {
+                                learn.deploy && (
+                                    <a
+                                        href={learn.deploy} className="link learn__links-item"
+                                        target="_blank" rel="noopener noreferrer"
+                                    >Projeto</a>
+                                )
+                            }
                         </li>
                 ) : ('')
                 }
