@@ -1,49 +1,64 @@
 import{Box}from'./'
+
+import{ImProfile}from'react-icons/im'
+import{
+    FaGithub,
+    FaLinkedin,
+    FaGlobe,
+    FaEnvelope
+}from'react-icons/fa'
+
 export const Links = () => (
     <Box>
         <div className="flex flex-col gap-5 p-5">
             <div>
-                <a href="http://" 
+                <a 
+                    href="https://github.com/eduardo-sdev" 
                     target="_blank" rel="noopener noreferrer"
-                    className="flex"
+                    className="flex gap-5 items-center hover:underline"
                 >
-                    <img className="mr-5"
-                        src="../public/icons/github.png" alt="github"/>
-                        Github
+                    <FaGithub color="#887c9c"/>
+                    eduardo-sdev
                 </a>
             </div>
             <div>
-                <a href="http://" 
+                <a 
+                    href="https://www.linkedin.com/in/esi01" 
                     target="_blank" rel="noopener noreferrer"
-                    className="flex"
+                    className="flex gap-5 items-center hover:underline"
                 >
-                    <img className="mr-5"
-                        src="../public/icons/linkedin.png" alt="linkedin"
-                    />
-                    Linkedin
+                    <FaLinkedin color="#887c9c"/>
+                    Eduardo silva
                 </a>
             </div>
             <div>
-                <a href="http://" 
+                <a 
+                    href="http://" 
                     target="_blank" rel="noopener noreferrer"
-                    className="flex"
+                    className="flex gap-5 items-center hover:underline"
                 >
-                    <img 
-                        className="mr-5"
-                        src="../public/icons/mail.png" alt="email"
-                    />
-                    Email
+                    <ImProfile color="#887c9c"/>
+                    Currículo
                 </a>
             </div>
             <div>
-                <a href="http://" 
+                <a 
+                    href="mailto:eduardosilvaprogramador@gmail.com" 
                     target="_blank" rel="noopener noreferrer"
-                    className="flex"
+                    className="flex gap-5 items-center hover:underline"
                 >
-                    <img className="mr-5"
-                        src="../public/icons/globe.png" alt="webSite"
-                    />
-                    Website
+                    <FaEnvelope color="#887c9c"/>
+                        email
+                </a>
+            </div>
+            <div>
+                <a
+                    href="http://" 
+                    target="_blank" rel="noopener noreferrer"
+                    className="flex gap-5 items-center hover:underline"
+                >
+                    <FaGlobe color="#887c9c"/>
+                    eduardo-sdev.github.io
                 </a>
             </div>
         </div>
