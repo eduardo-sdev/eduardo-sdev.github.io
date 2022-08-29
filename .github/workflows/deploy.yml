@@ -24,6 +24,8 @@ jobs:
 
       - name: Build project
         run: npm run build
+        env:
+          VITE_URL_SHEETIO: ${{ secrets.VITE_URL_SHEETIO }}
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v2
