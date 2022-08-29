@@ -1,14 +1,7 @@
-import{Box}from'./Box'
-import{Siderbar}from'./Siderbar'
-import{Profile}from'./Profile'
-import{Links}from'./Links'
-import{Technology}from'./Technology'
-
-export{
-    Box,
-    Siderbar,
-    Profile,
-    Links,
-    Technology,
-}
+export{Box}from'./Box'
+export{Siderbar}from'./Siderbar'
+export{Profile}from'./Profile'
+export{Links}from'./Links'
+export{Technology}from'./Technology'
+export{Projects}from'./Projects'
 
