@@ -2,7 +2,10 @@ import { useFetch }from'../hooks/useFetch'
 
 import {FaRegFolder} from 'react-icons/fa'
 
-import{Box}from'./'
+import{
+    Box,
+    Loading
+}from'./'
 
 const Project=({project})=>(
         <div>
@@ -39,8 +42,8 @@ export const Projects = () => {
         <div className="flex flex-col w-full gap-5">
             <Box title="Projetos"/>
             <div className="grid grid-cols-1 2xl:grid-cols-2 gap-5">
-                {isFerching&&<p>Carregando!</p>}
                 {projects?.map((project, index)=>(
+                {isFerching&&<Loading/>}
                     project.public === "TRUE" && (
                         <Box key={index}>
                             <Project project={project} />
