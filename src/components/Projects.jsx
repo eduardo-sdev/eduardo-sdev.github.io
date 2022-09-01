@@ -1,22 +1,33 @@
+import { useState }from'react'
 import { useFetch }from'../hooks/useFetch'
 
 import {FaRegFolder} from 'react-icons/fa'
 
 import{
     Box,
-    Loading
+    Loading,
+    ModalProject,
 }from'./'
 
 const Project=({project})=>(
+
+const Project=({project})=>{
+    const [showModalProject,setShowModalProject]=useState(false)
+    const handleOnClose=()=>setShowModalProject(false)
+    return(
         <div>
-            <div className="flex mb-3">
+            <div 
+                onClick={()=>setShowModalProject(true)}
+                className="flex mb-3 cursor-pointer"
+            >
                 <img 
                     className="w-20 h-fit mr-5 rounded-lg"
                     src={project.img ? project.img : "./project.png"} 
                     alt={project.title}
                 />
                 <div>
-                    <div className="flex items-center gap-5">
+                    <div 
+                        className="flex items-center gap-5">
                         <FaRegFolder color="#887c9c" size='20px'/>
                         <h2>{project.title}</h2>
                     </div>
@@ -27,13 +38,20 @@ const Project=({project})=>(
                 <ul className="flex gap-1">
                     {project.stack.split(',').map((item,index)=>(
                         <li key={index} className="">
-                            {item}
+                           {item}
                         </li>
                     ))}
                 </ul>
             </div>
+
+            <ModalProject 
+                onClose={handleOnClose} 
+                visible={showModalProject} 
+                project={project} 
+            />
         </div>
     )
+}
 
 export const Projects = () => {
     const {data: projects, isFerching} = useFetch(import.meta.env.VITE_URL_SHEETIO)  

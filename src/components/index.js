@@ -5,4 +5,5 @@ export{Links}from'./Links'
 export{Technology}from'./Technology'
 export{Projects}from'./Projects'
 export{Loading}from'./Loading'
+export{ModalProject}from'./ModalProject'
 
