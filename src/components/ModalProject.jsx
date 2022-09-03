@@ -1,4 +1,7 @@
-import{Box}from'./'
+import{
+    ImageSlider,
+    Box
+}from'./'
 import{
     FaGithub,
     FaGlobe,
@@ -27,7 +30,6 @@ export const ModalProject=({visible,onClose,project})=>{
         contributors,
         other_links,
     } = project
-    const imgUrl = img.split(",")
 
     const contributor = () => {
         const contributorsList = contributors.split(",")
@@ -60,17 +62,7 @@ export const ModalProject=({visible,onClose,project})=>{
                     </div>
                     <Box title="Descrição">{desc}</Box>
                     <Box>
-                        <div className=''>
-                            <div className='relative w-full flex justify-center'>
-                                <img src={imgUrl[0]}/>
-                                {imgUrl.length>1&&(
-                                    <div className='flex gap-3 absolute origin-center bottom-2'>
-                                        <button className="p-2 bg-[#22212C] rounded cursor-pointer"><FaAngleLeft/></button>
-                                        <button className="p-2 bg-[#22212C] rounded cursor-pointer"><FaAngleRight/></button>
-                                    </div>
-                                )}
-                            </div>
-                        </div>
+                        <ImageSlider linkImage={img}/>
                     </Box>
                     <Box>
                         <ul className="flex gap-1">
